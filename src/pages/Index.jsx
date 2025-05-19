@@ -42,60 +42,60 @@ const Index = () => {
       city: "格拉斯哥", 
       country: "英国",
       description: "漫步在格拉斯哥的街头，哥特式建筑与现代艺术完美融合。在凯尔文格罗夫艺术博物馆，感受苏格兰艺术的独特魅力。",
-      imageUrl: "/IMG_1341 2.jpg"
+      imageUrl: "/travel-map/IMG_1341 2.jpg"
     },
     { 
       city: "爱丁堡", 
       country: "英国",
       description: "爱丁堡城堡巍峨耸立，皇家英里大道上飘荡着风笛声。在亚瑟王座俯瞰整座城市，感受苏格兰历史的厚重。",
-      imageUrl: "/IMG_8538.jpg"
+      imageUrl: "/travel-map/IMG_8538.jpg"
     },
     { 
       city: "伦敦", 
       country: "英国",
       description: "泰晤士河畔，大本钟的钟声回荡。在伦敦眼上俯瞰城市全景，感受这座国际化大都市的活力与魅力。",
-      imageUrl: "/IMG_2861.JPG"
+      imageUrl: "/travel-map/IMG_2861.JPG"
     },
     { 
       city: "特罗姆瑟", 
       country: "挪威",
       description: "北极圈内的极光之城，在特罗姆瑟大教堂仰望绚丽的极光。乘坐缆车登上斯托尔斯泰纳山，俯瞰峡湾与极夜中的城市灯火。",
-      imageUrl: "/DSCF1372.JPG",
+      imageUrl: "/travel-map/DSCF1372.JPG",
       link: "https://www.bilibili.com/video/BV18T411Z7G6/?share_source=copy_web&vd_source=79948e39e1e700f557036a46ac04c4a0"
     },
     { 
       city: "巴塞罗那", 
       country: "西班牙",
       description: "高迪的建筑艺术在这里绽放，圣家堂的彩色玻璃折射出梦幻光芒。在兰布拉大道感受加泰罗尼亚的热情。",
-      imageUrl: "/IMG_1703.JPG",
+      imageUrl: "/travel-map/IMG_1703.JPG",
       link: "https://www.bilibili.com/video/BV1vN41167H5/?share_source=copy_web"
     },
     { 
       city: "雷克雅未克", 
       country: "冰岛",
       description: "在雷克雅未克感受极地的纯净与神秘。蓝湖温泉的蒸汽在寒风中升腾，极光在夜空中舞动，冰岛的自然奇观令人心驰神往。",
-      imageUrl: "/IMG_9275.JPG",
+      imageUrl: "/travel-map/IMG_9275.JPG",
       link: "https://www.bilibili.com/video/BV1A34y1f7nV/?share_source=copy_web&vd_source=79948e39e1e700f557036a46ac04c4a0"
     },
     {
       city: "布拉格",
       country: "捷克",
       description: "查理大桥上，古老的雕像诉说着历史。在布拉格城堡俯瞰红屋顶的海洋，感受这座童话之城的魅力。",
-      imageUrl: "/IMG_1396.JPG",
+      imageUrl: "/travel-map/IMG_1396.JPG",
       link: "https://www.bilibili.com/video/BV1n84y1M7Bq/?share_source=copy_web&vd_source=79948e39e1e700f557036a46ac04c4a0"
     },
     { 
       city: "维也纳", 
       country: "奥地利",
       description: "在金色大厅聆听古典音乐，在美泉宫感受哈布斯堡王朝的辉煌。维也纳的咖啡文化，让时光慢下来。",
-      imageUrl: "/IMG_1394.JPG",
+      imageUrl: "/travel-map/IMG_1394.JPG",
       link: "https://www.bilibili.com/video/BV1mk4y1i7vN/?share_source=copy_web&vd_source=79948e39e1e700f557036a46ac04c4a0"
     },
     { 
       city: "布达佩斯", 
       country: "匈牙利",
       description: "多瑙河将布达与佩斯分隔，链子桥连接两岸。在渔人堡俯瞰城市全景，在温泉浴场感受匈牙利人的悠闲。",
-      imageUrl: "/IMG_2157.jpg",
+      imageUrl: "/travel-map/IMG_2157.jpg",
       link: "https://www.bilibili.com/video/BV16c411T7KF/?share_source=copy_web&vd_source=79948e39e1e700f557036a46ac04c4a0"
     }
   ];
@@ -427,7 +427,7 @@ const Index = () => {
                 <span className="text-[#ffffff]">MY</span>
               </span>
               <img 
-                src="/logo.svg" 
+                src="/travel-map/logo.svg" 
                 alt="Logo" 
                 className="h-8 w-8 mx-1" 
               />
@@ -440,13 +440,12 @@ const Index = () => {
             <div className="relative group">
               <button className="font-['Source_Han_Sans'] text-[14px] font-[350] leading-[20px] tracking-[0em] text-white hover:opacity-80 transition flex items-center group-hover:opacity-100">
                 联系我
-                <img src="/箭头_v_小_下.svg" alt="arrow" className="ml-1 transition-transform duration-300 group-hover:rotate-180" />
+                <img src="/travel-map/箭头_v_小_下.svg" alt="arrow" className="ml-1 transition-transform duration-300 group-hover:rotate-180" />
               </button>
               {/* 浮窗 */}
               <div className="absolute right-0 top-full mt-2 z-50 hidden group-hover:flex flex-col items-center">
                 <div className="bg-white rounded-lg shadow-lg border border-gray-200 flex flex-row justify-center items-center" style={{ width: '450px', padding: '16px 8px', gap: '8px' }}>
-                  <img src="/code.png" alt="二维码" style={{ width: '400px', height: 'auto' }} className="object-contain mx-auto" />
-                  {/* 你可以在这里添加其他内容，如说明文字等 */}
+                  <img src="/travel-map/code.png" alt="二维码" style={{ width: '400px', height: 'auto' }} className="object-contain mx-auto" />
                 </div>
               </div>
             </div>
@@ -464,7 +463,7 @@ const Index = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/media.mp4" type="video/mp4" />
+            <source src="/travel-map/media.mp4" type="video/mp4" />
           </video>
           <div 
             className="absolute left-0 bottom-0 w-full h-[160px]"
@@ -474,7 +473,7 @@ const Index = () => {
           />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <img src="/title.svg" alt="title" className="mx-auto mb-8 animate-fade-in" />
+          <img src="/travel-map/title.svg" alt="title" className="mx-auto mb-8 animate-fade-in" />
         </div>
         <div className="absolute bottom-[30px] left-0 right-0 flex justify-center">
           <button 
@@ -485,7 +484,7 @@ const Index = () => {
             }}
           >
             即刻出发
-            <img src="/箭头_双_下.svg" alt="arrow" className="w-4 h-4 mt-[10px]" />
+            <img src="/travel-map/箭头_双_下.svg" alt="arrow" className="w-4 h-4 mt-[10px]" />
           </button>
         </div>
       </section>
@@ -711,7 +710,7 @@ const Index = () => {
                     }
                   }}
                 >
-                  <img src="/纸飞机_竖_面型.svg" alt="发送" className="w-5 h-5" />
+                  <img src="/travel-map/纸飞机_竖_面型.svg" alt="发送" className="w-5 h-5" />
                 </button>
               </div>
             </div>

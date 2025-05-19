@@ -8,8 +8,8 @@ const CityMarkers = ({ onCityClick }) => {
   const convertToSVGCoordinates = (lat, lng) => {
     // 将经纬度转换为SVG坐标
     // 使用与地图相同的坐标系统
-    const x = lng;  // 经度直接映射到x坐标
-    const y = lat;  // 纬度直接映射到y坐标（不再取反）
+    const x = (lng + 180) * (1000 / 360);  // 经度映射到 0-1000
+    const y = (90 - lat) * (500 / 180);    // 纬度映射到 0-500
     return { x, y };
   };
 
