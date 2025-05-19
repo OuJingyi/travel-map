@@ -7,9 +7,8 @@ const CityMarkers = ({ onCityClick }) => {
   // 将经纬度转换为SVG坐标的函数
   const convertToSVGCoordinates = (lat, lng) => {
     // 将经纬度转换为SVG坐标
-    // 使用与地图相同的坐标系统
-    const x = (lng + 180) * (1000 / 360);  // 经度映射到 0-1000
-    const y = (90 - lat) * (500 / 180);    // 纬度映射到 0-500
+    const x = ((lng + 180) / 360) * 1000; // SVG宽度为1000
+    const y = ((90 - lat) / 180) * 500;   // SVG高度为500
     return { x, y };
   };
 
@@ -45,8 +44,8 @@ const CityMarkers = ({ onCityClick }) => {
             <circle
               cx={x}
               cy={y}
-              r={isHovered ? "3" : "1.5"}
-              fill="rgba(100, 204, 161, 0.6)"
+              r={isHovered ? "3" : "2"}
+              fill="rgba(255, 255, 255, 0.9)"
               stroke={isHovered ? "white" : "none"}
               strokeWidth={isHovered ? "1.5" : "0"}
               style={{
@@ -73,8 +72,8 @@ const CityMarkers = ({ onCityClick }) => {
             <circle
               cx={x}
               cy={y}
-              r={isHovered ? "3" : "1.5"}
-              fill="rgba(100, 204, 161, 0.6)"
+              r={isHovered ? "3" : "2"}
+              fill="rgba(255, 255, 255, 0.9)"
               stroke={isHovered ? "white" : "none"}
               strokeWidth={isHovered ? "1.5" : "0"}
               style={{
