@@ -3,11 +3,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
-const isProdEnv = process.env.NODE_ENV === 'production';
-const PUBLIC_PATH = isProdEnv ? '/travel-map/' : '/';
-const OUT_DIR = 'dist';
-const PLUGINS = [react()];
-
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
@@ -25,10 +20,11 @@ export default defineConfig({
     cors: true,
     strictPort: true
   },
-  plugins: PLUGINS,
-  base: PUBLIC_PATH,
+  plugins: [react()],
+  base: '/travel-map/',
   build: {
-    outDir: OUT_DIR
+    outDir: 'dist',
+    sourcemap: true
   },
   resolve: {
     alias: [
