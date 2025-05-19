@@ -31,6 +31,7 @@ jobs:
           rm -rf .git/modules/node_modules
           rm -rf .git/modules/node_modules/.cache
           rm -rf .git/modules/node_modules/.cache/gh-pages
+          git config --global --add safe.directory /github/workspace
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -52,10 +53,10 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: actions/deploy-pages@v1 
