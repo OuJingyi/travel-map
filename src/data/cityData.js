@@ -1,0 +1,43 @@
+export const cityData = {
+  chineseCities: [
+    { name: "北京", lat: 39.9042, lng: 116.4074 },
+    { name: "拉萨", lat: 29.6548, lng: 91.1406 },
+    { name: "林芝", lat: 29.6540, lng: 94.3612 },
+    { name: "日喀则", lat: 29.2667, lng: 88.8833 },
+    { name: "丽江", lat: 26.8550, lng: 100.2278 },
+    { name: "昆明", lat: 24.8801, lng: 102.8329 },
+    { name: "成都", lat: 30.5728, lng: 104.0668 },
+    { name: "重庆", lat: 29.5630, lng: 106.5516 },
+    { name: "天津", lat: 39.0842, lng: 117.2010 },
+    { name: "杭州", lat: 30.2741, lng: 120.1551 },
+    { name: "无锡", lat: 31.4907, lng: 120.3123 },
+    { name: "上海", lat: 31.2304, lng: 121.4737 },
+    { name: "洛阳", lat: 34.6836, lng: 112.4546 },
+    { name: "兰州", lat: 36.0611, lng: 103.8343 },
+    { name: "甘南藏族自治州（合作市）", lat: 34.9996, lng: 102.9094 }
+  ],
+  europeanCities: [
+    { name: "金边", country: "柬埔寨", lat: 11.5449, lng: 104.8922 },
+    { name: "伦敦", country: "英国", lat: 51.5074, lng: -0.1278 },
+    { name: "格拉斯哥", country: "英国", lat: 55.8642, lng: -4.2518 },
+    { name: "爱丁堡", country: "英国", lat: 55.9533, lng: -3.1883 },
+    { name: "约克", country: "英国", lat: 53.9590, lng: -1.0815 },
+    { name: "利兹", country: "英国", lat: 53.8008, lng: -1.5491 },
+    { name: "巴黎", country: "法国", lat: 48.8566, lng: 2.3522 },
+    { name: "罗马", country: "意大利", lat: 41.9028, lng: 12.4964 },
+    { name: "佛罗伦萨", country: "意大利", lat: 43.7696, lng: 11.2558 },
+    { name: "威尼斯", country: "意大利", lat: 45.4408, lng: 12.3155 },
+    { name: "布拉格", country: "捷克", lat: 50.0755, lng: 14.4378 },
+    { name: "维也纳", country: "奥地利", lat: 48.2082, lng: 16.3738 },
+    { name: "布达佩斯", country: "匈牙利", lat: 47.4979, lng: 19.0402 },
+    { name: "巴塞罗那", country: "西班牙", lat: 41.3851, lng: 2.1734 },
+    { name: "塞维利亚", country: "西班牙", lat: 37.3891, lng: -5.9845 },
+    { name: "格拉纳达", country: "西班牙", lat: 37.1773, lng: -3.5986 },
+    { name: "里斯本", country: "葡萄牙", lat: 38.7223, lng: -9.1393 },
+    { name: "波尔图", country: "葡萄牙", lat: 41.1579, lng: -8.6291 },
+    { name: "雷克雅未克", country: "冰岛", lat: 64.1466, lng: -21.9426 },
+    { name: "特罗姆瑟", country: "挪威", lat: 69.6496, lng: 18.9553 },
+    { name: "罗瓦涅米", country: "芬兰", lat: 66.5039, lng: 25.7294 },
+    { name: "赫尔辛基", country: "芬兰", lat: 60.1699, lng: 24.9384 }
+  ]
+}; 
