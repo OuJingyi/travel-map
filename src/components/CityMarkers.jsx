@@ -6,7 +6,7 @@ const CityMarkers = ({ onCityClick }) => {
 
   // 将经纬度转换为SVG坐标的函数
   const convertToSVGCoordinates = (lat, lng) => {
-    // 将经纬度转换为SVG坐标
+    // 将经纬度转换为SVG坐标，考虑地图的变换
     const x = ((lng + 180) / 360) * 1000; // SVG宽度为1000
     const y = ((90 - lat) / 180) * 500;   // SVG高度为500
     return { x, y };
